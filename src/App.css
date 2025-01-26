@@ -1,0 +1,75 @@
+#chave, #title{
+  display: flex;
+  justify-content: center;
+  
+}
+
+header{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+#textExplanation{
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+}
+p{
+  width: 70%;
+  text-align: justify;
+}
+
+#criptografar, #descriptografar{
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+  flex: 1;
+}
+
+#button {
+  width: 40%;
+}
+#divbuttons{
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+textarea {
+  resize: none;
+}
+
+#inputChave{
+  margin-left: 5px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  min-height: 100px;
+}
+
+#body{
+  height: 100vh;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  background-color: #FFE4C4;
+}
+
+img{
+  cursor: pointer;
+  margin: 20px;
+}
+
+
