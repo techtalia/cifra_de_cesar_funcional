@@ -1,16 +1,17 @@
-#chave, #title{
+#chave,
+#title {
   display: flex;
   justify-content: center;
-  
 }
 
-header{
+header {
   display: flex;
   flex-direction: column;
   width: 100%;
+  margin-bottom: 30px;
 }
 
-#textExplanation{
+#textExplanation {
   display: flex;
   justify-content: center;
 }
@@ -19,26 +20,29 @@ h1 {
   display: flex;
   justify-content: center;
 }
-p{
+#textParagraph {
   width: 70%;
   text-align: justify;
 }
 
-#criptografar, #descriptografar{
+#criptografar,
+#descriptografar {
   display: flex;
   flex-direction: column;
 }
 
 main {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex: 1;
 }
 
+
 #button {
   width: 40%;
+  height: 30px;
 }
-#divbuttons{
+#divbuttons {
   display: flex;
   justify-content: center;
   margin-top: 5px;
@@ -46,30 +50,56 @@ main {
 
 textarea {
   resize: none;
+  border-radius: 10px;
+  padding: 10px;
 }
 
-#inputChave{
+#inputChave {
   margin-left: 5px;
 }
 
 footer {
   display: flex;
-  justify-content: center;
-  min-height: 100px;
+  flex-direction: column;
+  margin-top: 20px;
 }
 
-#body{
+#footerText, #footerIcons {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+#textFooter{
+  margin: 0;
+}
+
+#body {
   height: 100vh;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   margin: 0;
-  background-color: #FFE4C4;
+  opacity: 0.8;
+  color: black;
+  background: rgb(58,196,201);
+background: linear-gradient(180deg, rgba(58,196,201,1) 20%, rgba(97,172,176,1) 50%, rgba(143,185,187,1) 65%, rgba(255,255,255,1) 100%);
 }
 
-img{
+img {
   cursor: pointer;
   margin: 20px;
 }
 
 
+@media screen and (max-width:700px) {
+  main{
+    flex-direction: column;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  #button{
+    width: 30%;
+  }
+}

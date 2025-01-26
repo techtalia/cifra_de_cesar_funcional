@@ -67,18 +67,18 @@ function App() {
       <header>
         <h1>Cifra de Cesar</h1>
         <div id="textExplanation">
-          <p>
+          <p id="textParagraph">
             É uma técnica de criptografia onde cada letra de um texto é
             substituída por outra, que se encontra no alfabeto após a primeira
             letra em um número definido de vezes, esse número é conhecido como
-            Chave. Por exemplo, em uma troca simples com uma chave 5, a letra A
+            Chave. Por exemplo, em uma troca simples com uma Chave 5, a letra A
             (posição 1) seria substituída pela letra F (posição 6), a letra B
             (posição 2) se tornaria G (posição 7), e assim por diante.
             <br />
-            Apesar do nome, é sabido que cifras de substituição simples já eram
+            É sabido que cifras de substituição já eram
             usadas bem antes de Júlio César, apesar do nome dessa cifra ser em
             homenagem ao líder romano, pois ele a usava para trocar mensagens
-            militares com seus generais
+            militares com seus generais.
           </p>
         </div>
       </header>
@@ -95,11 +95,11 @@ function App() {
 
       <main>
         <div id="criptografar">
-          <h3 id="title">Criptografar</h3>
+          <h3 id="title">Mensagem a ser codificada</h3>
           <textarea
             value={valorCriptografar}
             onChange={handleValorCriptografarChange}
-            cols="30"
+            cols="40"
             rows="10"
           ></textarea>
           <div id="divbuttons">
@@ -119,18 +119,18 @@ function App() {
               }}
               disabled={valorCriptografar == ""}
             >
-              Ok
+              Criptografar
             </button>
           </div>
         </div>
 
         <div id="descriptografar">
-          <h3 id="title">Descriptografar</h3>
+          <h3 id="title">Mensagem a ser decodificada</h3>
 
           <textarea
             value={valorDescriptografar}
             onChange={handleValorDescriptografarChange}
-            cols="30"
+            cols="40"
             rows="10"
           ></textarea>
           <div id="divbuttons">
@@ -150,13 +150,20 @@ function App() {
               }}
               disabled={valorDescriptografar == ""}
             >
-              Ok
+              Descriptografar
             </button>
           </div>
         </div>
       </main>
 
       <footer>
+        <div id="footerText">
+
+        <p id="textFooter">Feito por Talia Andrade</p>
+        </div>
+        <div id="footerIcons">
+
+        
         <img
           src={require("./github-mark.png")}
           alt=""
@@ -175,6 +182,7 @@ function App() {
             window.open("https://linkedin.com/in/techtalia/");
           }}
         />
+        </div>
       </footer>
     </div>
   );
